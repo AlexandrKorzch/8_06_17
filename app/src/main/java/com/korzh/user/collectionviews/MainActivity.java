@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity implements ItemCallBack {
 
     private ListView mListView;
     private List<Model> mModels = new ArrayList<>();
-    private int mItemCount = 200;
+    private int mItemCount = 2000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

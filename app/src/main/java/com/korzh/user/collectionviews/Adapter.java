@@ -42,27 +42,24 @@ public class Adapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        Log.d(TAG, "getView() called with: position = [" + position + "], convertView = [" + convertView + "]");
+        Log.d(TAG, "getView() called with: convertView = [" + convertView + "]");
 
         ViewHolder viewHolder;
-        TextView textView;
 
         if(convertView == null){
-
             if(mModels.get(position) instanceof SecondModel){
                 convertView =  mLayoutInflater.inflate(R.layout.first_item, parent, false);
             }else{
                 convertView =  mLayoutInflater.inflate(R.layout.second_item, parent, false);
             }
-
             viewHolder = new ViewHolder(convertView);
+            convertView.setTag(viewHolder);
+        }else{
+            Log.d(TAG, "getView: else");
+            viewHolder = (ViewHolder) convertView.getTag();
         }
 
-
-//        textView
-//
-//        textView.setText("sdfsdfsdf");
-
+        viewHolder.getTextView().setText("hello");
 
         mItemCallBack.position(position);
 
