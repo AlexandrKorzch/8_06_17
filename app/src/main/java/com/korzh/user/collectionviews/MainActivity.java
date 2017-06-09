@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.korzh.user.collectionviews.adapter.Adapter;
 import com.korzh.user.collectionviews.callback.ItemCallBack;
 import com.korzh.user.collectionviews.model.FirstModel;
 import com.korzh.user.collectionviews.model.Model;

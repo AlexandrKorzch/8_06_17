@@ -1,4 +1,4 @@
-package com.korzh.user.collectionviews;
+package com.korzh.user.collectionviews.adapter;
 
 import android.content.Context;
 import android.util.Log;
@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
+import com.korzh.user.collectionviews.R;
 import com.korzh.user.collectionviews.callback.ItemCallBack;
 import com.korzh.user.collectionviews.model.FirstModel;
 import com.korzh.user.collectionviews.model.Model;
