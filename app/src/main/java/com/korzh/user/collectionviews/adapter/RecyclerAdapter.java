@@ -58,7 +58,6 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Holder
         return position % 2 == 0 ? 0 : 1;
     }
 
-
     static class Holder extends RecyclerView.ViewHolder{
         View view;
         TextView mTextView;
@@ -70,5 +69,4 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.Holder
             mImageView = (ImageView) itemView.findViewById(R.id.img_icon);
         }
     }
-
 }
